@@ -1,388 +1,545 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio — Developer</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- SCAN LINES OVERLAY -->
+    <div class="scanlines" aria-hidden="true"></div>
 
-  <!-- SCAN LINES OVERLAY -->
-  <div class="scanlines" aria-hidden="true"></div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#home" class="nav-logo">
-        <span class="logo-bracket">&lt;</span>DevMahmood<span class="logo-bracket">/&gt;</span><span class="logo-cursor">_</span>
-      </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home"       class="nav-link active">Home</a></li>
-        <li><a href="#stack"      class="nav-link">Stack</a></li>
-        <li><a href="#projects"   class="nav-link">Projects</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#contact"    class="nav-link">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-          <i class="fa-solid fa-sun theme-icon sun"></i>
-          <i class="fa-solid fa-moon theme-icon moon"></i>
-        </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="#home"       class="mob-link">Home</a></li>
-      <li><a href="#stack"      class="mob-link">Stack</a></li>
-      <li><a href="#projects"   class="mob-link">Projects</a></li>
-      <li><a href="#experience" class="mob-link">Experience</a></li>
-      <li><a href="#contact"    class="mob-link">Contact</a></li>
-    </ul>
-  </div>
-
-  <!-- ═══ HERO ═══ -->
-  <section class="hero" id="home">
-    <div class="hero-noise"></div>
-    <div class="hero-bg-grid"></div>
-    <div class="hero-glow-orb orb1"></div>
-    <div class="hero-glow-orb orb2"></div>
-
-    <div class="float-snippet s1" aria-hidden="true"><span class="ck">const</span> dev = <span class="cs">"awesome"</span>;</div>
-    <div class="float-snippet s2" aria-hidden="true"><span class="ck">print</span>(<span class="cs">"Hello, World!"</span>)</div>
-    <div class="float-snippet s3" aria-hidden="true">npm <span class="cs">import pyttsx3 </span></div>
-    <div class="float-snippet s4" aria-hidden="true"><span class="ck">git</span> push origin main</div>
-
-    <div class="hero-container">
-      <div class="hero-text">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          Available for work
-        </div>
-        <h1 class="hero-title">
-          <span class="line-1">Hi, I'm</span>
-          <span class="line-2"><span class="accent-text">Mahmood Khan</span></span>
-          <span class="line-3">Full Stack <span class="accent-text">Developer</span></span>
-        </h1>
-        <p class="hero-desc">
-          I craft performant, scalable &amp; aesthetic web experiences.
-          Passionate about clean code, great design, and building
-          solutions that actually ship.
-        </p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn-primary">View Projects <i class="fa fa-arrow-right"></i></a>
-          <a href="#contact"  class="btn-outline"><i class="fa-solid fa-terminal"></i> Contact Me</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Internships</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><span class="stat-num">5</span><span class="stat-label">Projects</span></div>
-          <div class="stat-divider"></div>
-          <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Tech Stacks</span></div>
-        </div>
-      </div>
-
-      <div class="hero-image-wrap">
-        <div class="img-ring ring-1"></div>
-        <div class="img-ring ring-2"></div>
-        <div class="img-ring ring-3"></div>
-        <div class="hero-img-container">
-          <img src="./myImage.webp"
-               alt="Profile" class="hero-img" id="profileImg"/>
-          <div class="img-overlay-badge bot-badge">
-            <i class="fa-solid fa-code"></i> Junior Developer
-          </div>
-          <div class="img-corner tl"></div>
-          <div class="img-corner tr"></div>
-          <div class="img-corner bl"></div>
-          <div class="img-corner br"></div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- ═══ TECH STACK CAROUSEL ═══ -->
-  <section class="stack-section" id="stack">
-    <div class="section-header">
-      <span class="section-tag"><i class="fa-solid fa-microchip"></i> What I Use</span>
-      <h2 class="section-title">Tech <span class="accent-text">Stack</span></h2>
-      <p class="section-desc">Technologies I work with to build powerful applications</p>
-    </div>
-
-    <!-- Row 1 → left to right -->
-    <div class="carousel-wrap">
-      <div class="carousel-fade-l"></div>
-      <div class="carousel-track" id="track1"></div>
-      <div class="carousel-fade-r"></div>
-    </div>
-
-    <!-- Row 2 → right to left -->
-    <div class="carousel-wrap" style="margin-top:18px">
-      <div class="carousel-fade-l"></div>
-      <div class="carousel-track carousel-reverse" id="track2"></div>
-      <div class="carousel-fade-r"></div>
-    </div>
-  </section>
-
-  <!-- ═══ PROJECTS ═══ -->
-  <section class="projects-section" id="projects">
-    <div class="section-header">
-      <span class="section-tag"><i class="fa-solid fa-folder-open"></i> What I've Built</span>
-      <h2 class="section-title">Featured <span class="accent-text">Projects</span></h2>
-      <p class="section-desc">A selection of projects I've worked on</p>
-    </div>
-    <div class="projects-grid">
-
-      <div class="project-card reveal">
-        <div class="project-glow"></div>
-        <div class="card-corner tl"></div><div class="card-corner br"></div>
-        <div class="project-top">
-          <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
-          <div class="project-tags">
-            <span class="p-tag">Python</span><span class="p-tag">Kaggle</span><span class="p-tag">TensorFlow</span>
-          </div>
-        </div>
-        <h3 class="project-title">Sentimental Analysis on Dataset</h3>
-        <p class="project-desc">An Artificial Intelligence project for analyzing sentiments in a given dataset using Python and Kaggle.</p>
-        <div class="project-links">
-          <a href="#" class="proj-btn github-btn"><i class="fa-brands fa-github"></i> View on GitHub</a>
-        </div>
-      </div>
-
-      <div class="project-card featured reveal">
-        <div class="project-glow accent-glow"></div>
-        <div class="card-corner tl"></div><div class="card-corner br"></div>
-        <div class="project-top">
-          <div class="project-icon accent-icon"><i class="fa-solid fa-brain"></i></div>
-          <div class="project-tags">
-            <span class="p-tag">React</span><span class="p-tag">NodeJS</span><span class="p-tag">TypeScript</span><span class="p-tag">ExpressJS</span>
-          </div>
-        </div>
-        <h3 class="project-title">SyncHub - A Project Management Application</h3>
-        <p class="project-desc">A comprehensive project management solution built with modern web technologies.</p>
-        <div class="project-links">
-          <a href="#" class="proj-btn github-btn"><i class="fa-brands fa-github"></i> View on GitHub</a>
-          <a href="#" class="proj-btn live-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview</a>
-        </div>
-      </div>
-
-      <div class="project-card reveal">
-        <div class="project-glow"></div>
-        <div class="card-corner tl"></div><div class="card-corner br"></div>
-        <div class="project-top">
-          <div class="project-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-          <div class="project-tags">
-            <span class="p-tag">Software Engineering</span><span class="p-tag">SRS/SRE</span>
-          </div>
-        </div>
-        <h3 class="project-title">AI Module Requirements ft <strong>NayaTel</strong></h3>
-        <p class="project-desc">In colloboration with NayaTel, we gathered requirements from them in a shape of Software Requirements Specification (SRS).</p>
-        <div class="project-links">
-          <a href="#" class="proj-btn github-btn"><i class="fa-brands fa-github"></i> View on GitHub</a>
-          <a href="#" class="proj-btn live-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ═══ EXPERIENCE ═══ -->
-  <section class="experience-section" id="experience">
-    <div class="section-header">
-      <span class="section-tag"><i class="fa-solid fa-briefcase"></i> My Journey</span>
-      <h2 class="section-title">Work <span class="accent-text">Experience</span></h2>
-      <p class="section-desc">Professional experience and internships</p>
-    </div>
-    <div class="exp-timeline">
-
-      <div class="exp-card reveal">
-        <div class="exp-card-inner">
-          <div class="exp-left">
-            <div class="exp-logo"><i class="fa-solid fa-building"></i></div>
-            <div class="exp-connector"></div>
-          </div>
-          <div class="exp-content">
-            <span class="exp-number">01</span>
-            <div class="card-corner tl"></div><div class="card-corner br"></div>
-            <div class="exp-header">
-              <div>
-                <h3 class="exp-company">Arch Technologies</h3>
-                <p class="exp-role"><i class="fa-solid fa-code"></i> Web Development Intern</p>
-              </div>
-              <span class="exp-type">Remote</span>
-            </div>
-            <div class="exp-dates">
-              <span class="date-badge"><i class="fa-regular fa-calendar"></i> Mar 1, 2026</span>
-              <span class="date-arrow">——→</span>
-              <span class="date-badge"><i class="fa-regular fa-calendar"></i> Apr 28, 2026</span>
-            </div>
-            <p class="exp-desc">Working as a Web Development Intern, contributing to building and maintaining web applications. Collaborating with the dev team on full-stack features and UI improvements.</p>
-            <div class="exp-tags">
-              <span class="e-tag">HTML</span>
-              <span class="e-tag">CSS</span>
-              <span class="e-tag">JavaScript</span>
-              <span class="e-tag">React</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="exp-card reveal">
-        <div class="exp-card-inner">
-          <div class="exp-left">
-            <div class="exp-logo filled-logo"><i class="fa-solid fa-laptop-code"></i></div>
-            <div class="exp-connector last"></div>
-          </div>
-          <div class="exp-content">
-            <span class="exp-number">02</span>
-            <div class="card-corner tl"></div><div class="card-corner br"></div>
-            <div class="exp-header">
-              <div>
-                <h3 class="exp-company">Developers Hub</h3>
-                <p class="exp-role"><i class="fa-solid fa-layer-group"></i> Frontend Developer Intern</p>
-              </div>
-              <span class="exp-type">Remote</span>
-            </div>
-            <div class="exp-dates">
-              <span class="date-badge"><i class="fa-regular fa-calendar"></i> Mar 10, 2026</span>
-              <span class="date-arrow">——→</span>
-              <span class="date-badge"><i class="fa-regular fa-calendar"></i> Apr 5, 2026</span>
-            </div>
-            <p class="exp-desc">Frontend Developer intern focused on building responsive user interfaces and improving user experience. Worked on component libraries and design system implementation.</p>
-            <div class="exp-tags">
-              <span class="e-tag">React</span>
-              <span class="e-tag">TailwindCSS</span>
-              <span class="e-tag">TypeScript</span>
-              <span class="e-tag">Figma</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ═══ CONTACT ═══ -->
-  <section class="contact-section" id="contact">
-    <div class="section-header">
-      <span class="section-tag"><i class="fa-solid fa-satellite-dish"></i> Let's Talk</span>
-      <h2 class="section-title">Contact <span class="accent-text">Me</span></h2>
-      <p class="section-desc">Have a project in mind? Let's build something together.</p>
-    </div>
-    <div class="contact-wrapper">
-      <div class="contact-info">
-        <div class="contact-info-card reveal">
-          <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
-          <div><p class="ci-label">Email</p><p class="ci-val">hello@yourportfolio.dev</p></div>
-        </div>
-        <div class="contact-info-card reveal">
-          <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
-          <div><p class="ci-label">Location</p><p class="ci-val">Rawalpindi, Pakistan</p></div>
-        </div>
-        <div class="contact-info-card reveal">
-          <div class="ci-icon"><i class="fa-solid fa-circle-check"></i></div>
-          <div><p class="ci-label">Status</p><p class="ci-val">Open to Opportunities</p></div>
-        </div>
-
-        <!-- Terminal decorative block -->
-        <div class="terminal-block reveal">
-          <div class="terminal-bar">
-            <span class="t-dot red"></span>
-            <span class="t-dot yellow"></span>
-            <span class="t-dot green"></span>
-            <span class="t-title">contact.sh</span>
-          </div>
-          <div class="terminal-body">
-            <p><span class="t-prompt">$</span> <span class="t-cmd">ping</span> developer</p>
-            <p class="t-out">PONG — I'm alive &amp; listening 🟢</p>
-            <p><span class="t-prompt">$</span> <span class="t-cmd">status</span> --hire</p>
-            <p class="t-out">Available · Remote · Full-time</p>
-            <p><span class="t-prompt">$</span> <span class="blink-cursor">▋</span></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-form-wrap reveal">
-        <div class="form-badge">
-          <svg width="13" height="14" viewBox="0 0 13 14" fill="none">
-            <path d="M1.613 8.2a.62.62 0 0 1-.553-.341.59.59 0 0 1 .076-.637l6.048-6.118a.31.31 0 0 1 .375-.069c.061.033.11.084.137.147a.3.3 0 0 1 .014.197L6.537 4.991a.59.59 0 0 0 .07.552.61.61 0 0 0 .504.257h4.276a.62.62 0 0 1 .553.341.59.59 0 0 1-.076.637l-6.048 6.119a.31.31 0 0 1-.375.067.295.295 0 0 1-.15-.344l1.172-3.61a.59.59 0 0 0-.07-.553.61.61 0 0 0-.504-.257z" stroke="currentColor" stroke-miterlimit="5.759" stroke-linecap="round"/>
-          </svg>
-          Quick Response
-        </div>
-        <div class="contact-form-inner">
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label">Your Name</label>
-              <div class="input-wrap">
-                <i class="fa-solid fa-user input-icon"></i>
-                <input type="text" placeholder="John Doe" class="form-input" id="contactName"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Email Address</label>
-              <div class="input-wrap">
-                <i class="fa-solid fa-envelope input-icon"></i>
-                <input type="email" placeholder="john@example.com" class="form-input" id="contactEmail"/>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Message</label>
-            <textarea placeholder="Tell me about your project..." class="form-textarea" id="contactMessage" rows="5"></textarea>
-          </div>
-          <button class="contact-submit-btn" onclick="handleContactSubmit()">
-            <i class="fa-solid fa-paper-plane"></i> Send Message
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>DevMahmood<span
+            class="logo-bracket"
+            >/&gt;</span
+          ><span class="logo-cursor">_</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#stack" class="nav-link">Stack</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fa-solid fa-sun theme-icon sun"></i>
+            <i class="fa-solid fa-moon theme-icon moon"></i>
           </button>
-          <p class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</p>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- ═══ FOOTER ═══ -->
-  <footer class="footer">
-    <div class="footer-top-line"></div>
-    <div class="footer-inner">
-      <div class="footer-logo">
-        <span class="logo-bracket">&lt;</span>Dev<span class="logo-bracket">/&gt;</span><span class="logo-cursor">_</span>
-      </div>
-      <div class="footer-links">
-        <a href="#home"       class="footer-link">Home</a>
-        <a href="#stack"      class="footer-link">Stack</a>
-        <a href="#projects"   class="footer-link">Projects</a>
-        <a href="#experience" class="footer-link">Experience</a>
-        <a href="#contact"    class="footer-link">Contact</a>
-      </div>
-      <div class="footer-socials">
-        <a href="#" class="social-icon" aria-label="Facebook">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#" class="social-icon" aria-label="Instagram">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 11.37a4 4 0 1 1-7.914 1.173A4 4 0 0 1 16 11.37m1.5-4.87h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#" class="social-icon" aria-label="LinkedIn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6M6 9H2v12h4zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#" class="social-icon" aria-label="Twitter">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#" class="social-icon" aria-label="GitHub">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 18c-4.51 2-5-2-7-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-      <p class="footer-copy">Copyright © 2026 <span class="accent-text">YourPortfolio</span>. Built with <span class="accent-text">&lt;3</span> — All rights reserved.</p>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#home" class="mob-link">Home</a></li>
+        <li><a href="#stack" class="mob-link">Stack</a></li>
+        <li><a href="#projects" class="mob-link">Projects</a></li>
+        <li><a href="#experience" class="mob-link">Experience</a></li>
+        <li><a href="#contact" class="mob-link">Contact</a></li>
+      </ul>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="home">
+      <div class="hero-noise"></div>
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow-orb orb1"></div>
+      <div class="hero-glow-orb orb2"></div>
+
+      <div class="float-snippet s1" aria-hidden="true">
+        <span class="ck">const</span> dev = <span class="cs">"awesome"</span>;
+      </div>
+      <div class="float-snippet s2" aria-hidden="true">
+        <span class="ck">print</span>(<span class="cs">"Hello, World!"</span>)
+      </div>
+      <div class="float-snippet s3" aria-hidden="true">
+        npm <span class="cs">import pyttsx3 </span>
+      </div>
+      <div class="float-snippet s4" aria-hidden="true">
+        <span class="ck">git</span> push origin main
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for work
+          </div>
+          <h1 class="hero-title">
+            <span class="line-1">Hi, I'm</span>
+            <span class="line-2"
+              ><span class="accent-text">Mahmood Khan</span></span
+            >
+            <span class="line-3"
+              >Full Stack <span class="accent-text">Developer</span></span
+            >
+          </h1>
+          <p class="hero-desc">
+            I craft performant, scalable &amp; aesthetic web experiences.
+            Passionate about clean code, great design, and building solutions
+            that actually ship.
+          </p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn-primary"
+              >View Projects <i class="fa fa-arrow-right"></i
+            ></a>
+            <a href="#contact" class="btn-outline"
+              ><i class="fa-solid fa-terminal"></i> Contact Me</a
+            >
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">2+</span
+              ><span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">5</span
+              ><span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num">6+</span
+              ><span class="stat-label">Tech Stacks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <div class="img-ring ring-1"></div>
+          <div class="img-ring ring-2"></div>
+          <div class="img-ring ring-3"></div>
+          <div class="hero-img-container">
+            <img
+              src="./myImage.webp"
+              alt="Profile"
+              class="hero-img"
+              id="profileImg"
+            />
+            <div class="img-overlay-badge bot-badge">
+              <i class="fa-solid fa-code"></i> Junior Developer
+            </div>
+            <div class="img-corner tl"></div>
+            <div class="img-corner tr"></div>
+            <div class="img-corner bl"></div>
+            <div class="img-corner br"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TECH STACK CAROUSEL ═══ -->
+    <section class="stack-section" id="stack">
+      <div class="section-header">
+        <span class="section-tag"
+          ><i class="fa-solid fa-microchip"></i> What I Use</span
+        >
+        <h2 class="section-title">
+          Tech <span class="accent-text">Stack</span>
+        </h2>
+        <p class="section-desc">
+          Technologies I work with to build powerful applications
+        </p>
+      </div>
+
+      <!-- Row 1 → left to right -->
+      <div class="carousel-wrap">
+        <div class="carousel-fade-l"></div>
+        <div class="carousel-track" id="track1"></div>
+        <div class="carousel-fade-r"></div>
+      </div>
+
+      <!-- Row 2 → right to left -->
+      <div class="carousel-wrap" style="margin-top: 18px">
+        <div class="carousel-fade-l"></div>
+        <div class="carousel-track carousel-reverse" id="track2"></div>
+        <div class="carousel-fade-r"></div>
+      </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section class="projects-section" id="projects">
+      <div class="section-header">
+        <span class="section-tag"
+          ><i class="fa-solid fa-folder-open"></i> What I've Built</span
+        >
+        <h2 class="section-title">
+          Featured <span class="accent-text">Projects</span>
+        </h2>
+        <p class="section-desc">A selection of projects I've worked on</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="card-corner tl"></div>
+          <div class="card-corner br"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="project-tags">
+              <span class="p-tag">Python</span><span class="p-tag">Kaggle</span
+              ><span class="p-tag">TensorFlow</span>
+            </div>
+          </div>
+          <h3 class="project-title">Sentimental Analysis on Dataset</h3>
+          <p class="project-desc">
+            An Artificial Intelligence project for analyzing sentiments in a
+            given dataset using Python and Kaggle.
+          </p>
+          <div class="project-links">
+            <a href="#" class="proj-btn github-btn"
+              ><i class="fa-brands fa-github"></i> View on GitHub</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card featured reveal">
+          <div class="project-glow accent-glow"></div>
+          <div class="card-corner tl"></div>
+          <div class="card-corner br"></div>
+          <div class="project-top">
+            <div class="project-icon accent-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="project-tags">
+              <span class="p-tag">React</span><span class="p-tag">NodeJS</span
+              ><span class="p-tag">TypeScript</span
+              ><span class="p-tag">ExpressJS</span>
+            </div>
+          </div>
+          <h3 class="project-title">
+            SyncHub - A Project Management Application
+          </h3>
+          <p class="project-desc">
+            A comprehensive project management solution built with modern web
+            technologies.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/codingwithmahmo/SyncHub" class="proj-btn github-btn"
+              ><i class="fa-brands fa-github"></i> View on GitHub</a>
+            <a href="https://synchub-weld.vercel.app/" class="proj-btn live-btn"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+              Preview</a >
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="card-corner tl"></div>
+          <div class="card-corner br"></div>
+          <div class="project-top">
+            <div class="project-icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <div class="project-tags">
+              <span class="p-tag">Software Engineering</span
+              ><span class="p-tag">SRS/SRE</span>
+            </div>
+          </div>
+          <h3 class="project-title">
+            AI Module Requirements ft <strong>NayaTel</strong>
+          </h3>
+          <p class="project-desc">
+            In colloboration with NayaTel, we gathered requirements from them in
+            a shape of Software Requirements Specification (SRS).
+          </p>
+          <div class="project-links">
+            <a href="#" class="proj-btn github-btn"
+              ><i class="fa-brands fa-github"></i> View on GitHub</a
+            >
+            <a href="#" class="proj-btn live-btn"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+              Preview</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EXPERIENCE ═══ -->
+    <section class="experience-section" id="experience">
+      <div class="section-header">
+        <span class="section-tag"
+          ><i class="fa-solid fa-briefcase"></i> My Journey</span
+        >
+        <h2 class="section-title">
+          Work <span class="accent-text">Experience</span>
+        </h2>
+        <p class="section-desc">Professional experience and internships</p>
+      </div>
+      <div class="exp-timeline">
+        <div class="exp-card reveal">
+          <div class="exp-card-inner">
+            <div class="exp-left">
+              <div class="exp-logo"><i class="fa-solid fa-building"></i></div>
+              <div class="exp-connector"></div>
+            </div>
+            <div class="exp-content">
+              <span class="exp-number">01</span>
+              <div class="card-corner tl"></div>
+              <div class="card-corner br"></div>
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-company">Arch Technologies</h3>
+                  <p class="exp-role">
+                    <i class="fa-solid fa-code"></i> Web Development Intern
+                  </p>
+                </div>
+                <span class="exp-type">Remote</span>
+              </div>
+              <div class="exp-dates">
+                <span class="date-badge"
+                  ><i class="fa-regular fa-calendar"></i> Mar 1, 2026</span
+                >
+                <span class="date-arrow">——→</span>
+                <span class="date-badge"
+                  ><i class="fa-regular fa-calendar"></i> Apr 28, 2026</span
+                >
+              </div>
+              <p class="exp-desc">
+                Working as a Web Development Intern, contributing to building
+                and maintaining web applications. Collaborating with the dev
+                team on full-stack features and UI improvements.
+              </p>
+              <div class="exp-tags">
+                <span class="e-tag">HTML</span>
+                <span class="e-tag">CSS</span>
+                <span class="e-tag">JavaScript</span>
+                <span class="e-tag">React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-card-inner">
+            <div class="exp-left">
+              <div class="exp-logo filled-logo">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div class="exp-connector last"></div>
+            </div>
+            <div class="exp-content">
+              <span class="exp-number">02</span>
+              <div class="card-corner tl"></div>
+              <div class="card-corner br"></div>
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-company">Developers Hub</h3>
+                  <p class="exp-role">
+                    <i class="fa-solid fa-layer-group"></i> Frontend Developer
+                    Intern
+                  </p>
+                </div>
+                <span class="exp-type">Remote</span>
+              </div>
+              <div class="exp-dates">
+                <span class="date-badge"
+                  ><i class="fa-regular fa-calendar"></i> Mar 10, 2026</span
+                >
+                <span class="date-arrow">——→</span>
+                <span class="date-badge"
+                  ><i class="fa-regular fa-calendar"></i> Apr 5, 2026</span
+                >
+              </div>
+              <p class="exp-desc">
+                Frontend Developer intern focused on building responsive user
+                interfaces and improving user experience. Worked on component
+                libraries and design system implementation.
+              </p>
+              <div class="exp-tags">
+                <span class="e-tag">React</span>
+                <span class="e-tag">TailwindCSS</span>
+                <span class="e-tag">TypeScript</span>
+                <span class="e-tag">Figma</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <span class="section-tag"
+          ><i class="fa-solid fa-satellite-dish"></i> Let's Talk</span
+        >
+        <h2 class="section-title">
+          Contact <span class="accent-text">Me</span>
+        </h2>
+        <p class="section-desc">
+          Have a project in mind? Let's build something together.
+        </p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-info-card reveal">
+            <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <p class="ci-label">Email</p>
+              <p class="ci-val">mahmood.mkhan03@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-info-card reveal">
+            <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <p class="ci-label">Location</p>
+              <p class="ci-val">Islamabad, Pakistan</p>
+            </div>
+          </div>
+          <div class="contact-info-card reveal">
+            <div class="ci-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <div>
+              <p class="ci-label">Status</p>
+              <p class="ci-val">Open to Opportunities</p>
+            </div>
+          </div>
+
+          <!-- Terminal decorative block -->
+          <div class="terminal-block reveal">
+            <div class="terminal-bar">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="t-title">contact.sh</span>
+            </div>
+            <div class="terminal-body">
+              <p>
+                <span class="t-prompt">$</span>
+                <span class="t-cmd">ping</span> developer
+              </p>
+              <p class="t-out">PONG — I'm alive &amp; listening 🟢</p>
+              <p>
+                <span class="t-prompt">$</span>
+                <span class="t-cmd">status</span> --hire
+              </p>
+              <p class="t-out">Available · Remote · Full-time</p>
+              <p>
+                <span class="t-prompt">$</span>
+                <span class="blink-cursor">▋</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <div class="form-badge">
+            <svg width="13" height="14" viewBox="0 0 13 14" fill="none">
+              <path
+                d="M1.613 8.2a.62.62 0 0 1-.553-.341.59.59 0 0 1 .076-.637l6.048-6.118a.31.31 0 0 1 .375-.069c.061.033.11.084.137.147a.3.3 0 0 1 .014.197L6.537 4.991a.59.59 0 0 0 .07.552.61.61 0 0 0 .504.257h4.276a.62.62 0 0 1 .553.341.59.59 0 0 1-.076.637l-6.048 6.119a.31.31 0 0 1-.375.067.295.295 0 0 1-.15-.344l1.172-3.61a.59.59 0 0 0-.07-.553.61.61 0 0 0-.504-.257z"
+                stroke="currentColor"
+                stroke-miterlimit="5.759"
+                stroke-linecap="round"
+              />
+            </svg>
+            Quick Response
+          </div>
+          <div class="contact-form-inner">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="form-input"
+                    id="contactName"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-envelope input-icon"></i>
+                  <input
+                    type="email"
+                    placeholder="abc@example.com"
+                    class="form-input"
+                    id="contactEmail"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea
+                placeholder="Tell me about your project..."
+                class="form-textarea"
+                id="contactMessage"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="contact-submit-btn" onclick="handleContactSubmit()">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you soon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+      <div class="footer-top-line"></div>
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">&lt;</span>DevMahmood<span class="logo-bracket"
+            >/&gt;</span
+          ><span class="logo-cursor">_</span>
+        </div>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#stack" class="footer-link">Stack</a>
+          <a href="#projects" class="footer-link">Projects</a>
+          <a href="#experience" class="footer-link">Experience</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/m7k1__/" target="_blank" class="social-icon" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/mahmoodkhan9517/" target="_blank" class="social-icon" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/codingwithmahmo" target="_blank" class="social-icon" aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.youtube.com/@codezforever" target="_blank" class="social-icon" aria-label="YouTube"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+        <p class="footer-copy">
+          Copyright © 2026 <span class="accent-text">DevMahmood</span>. Built
+          with <span class="accent-text">&lt;3</span> — All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

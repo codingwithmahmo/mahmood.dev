@@ -52,11 +52,11 @@ const techs = [
   { n: 'C++',        s: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
 ];
 
-const mq   = document.getElementById('mqt');
-const html = techs.map(t =>
+const mq = document.getElementById('mqt');
+const mqHtml = techs.map(t =>
   `<div class="mq-item"><img src="${t.s}" alt="${t.n}" title="${t.n}" loading="lazy"/></div>`
 ).join('');
-mq.innerHTML = html + html; // duplicate for seamless loop
+mq.innerHTML = mqHtml + mqHtml; // duplicate for seamless loop
 
 /* ── Scroll reveal ── */
 const obs = new IntersectionObserver(entries => {
@@ -66,9 +66,19 @@ const obs = new IntersectionObserver(entries => {
       obs.unobserve(x.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
 
-document.querySelectorAll('.rv').forEach(el => obs.observe(el));
+document.querySelectorAll('.rv').forEach(el => {
+  el.classList.add('will-animate');
+  obs.observe(el);
+});
+
+// Safety fallback after 1s — reveal anything still hidden
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.querySelectorAll('.rv:not(.in)').forEach(el => el.classList.add('in'));
+  }, 1000);
+});
 
 /* ── Contact form ── */
 function sendForm(e) {
@@ -77,7 +87,7 @@ function sendForm(e) {
   btn.textContent = '✓ Sent!';
   btn.style.background = '#1DB954';
   setTimeout(() => {
-    btn.textContent = 'Subscribe now';
+    btn.textContent = 'Contact Me';
     btn.style.background = '';
     e.target.reset();
   }, 3000);
